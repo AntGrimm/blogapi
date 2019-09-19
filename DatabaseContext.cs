@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using blogapi.Models;
 using BlogApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -46,6 +47,7 @@ namespace blogapi
     }
 
     public DbSet<Blog> Blogs { get; set; }
+    public DbSet<Comment> Comments { get; set; }
 
   }
 }

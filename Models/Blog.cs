@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using blogapi.Models;
 
 namespace BlogApi.Models
 {
@@ -11,5 +13,7 @@ namespace BlogApi.Models
     public DateTime DateCreated { get; set; } = DateTime.Now;
     public string ImageUrl { get; set; }
     public int OhSnaps { get; set; }
+
+    public List<Comment> Comments { get; set; } = new List<Comment>();
   }
 }
